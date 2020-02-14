@@ -5,7 +5,6 @@ image:
   alt: "a screenshot of the website for Small World Travel Africa"
   source: "/images/smallworldtravelafrica.png"
 date: 2019-01-21
-tags: portfolio
 ---
 
 Steve and Catherine Hanna Askin's website for Small World Travel Africa, a service offering cultural learning and travel experiences in southern Africa.

@@ -25,26 +25,26 @@ title: home
       </div>
     </div>
     <div class="">
-      <h2>
+      <h2 class="h1">
         <span class="text--bg-line--primary">
           Projects I've Worked On
         </span>
       </h2>
       <ul class="list-group    stack">
         {% for item in collections.portfolio %}
-        <li class="grid-container--auto    card   bg-accent">
-          <div class="flex-column--center    bg-main">
-            <h3 class="h2   padding--lg">
+        <li class="portfolio__card    bg-main">
+          <div class="portfolio__card__header   ">
+            <h3 class="h2   portfolio__card__title">
               {{ item.data.title }}
             </h3>
             <img
               data-src="{{ item.data.image.source }}"
               alt="{{ item.data.image.alt }}"
-              class="lazy-load"
+              class="portfolio__card__img    lazy-load"
               width="100%"
             />
           </div>
-          <div class="bg-accent   padding--lg">
+          <div class="portfolio__card__body     bg-accent   ">
             {{ item.templateContent | safe }}
           </div>
         </li>
@@ -104,9 +104,8 @@ title: home
         </p>
       </div>
       <div>
-        <div class="flex-column--center   padding--lg">
+        <div class="padding--lg">
           {% include "contact-envelope-svg.html" %}
-          <h2 class="h1">Contact Me</h2>
         </div>
         {% include "sidebar.njk" %}
       </div>

@@ -6,11 +6,11 @@
 :root {
   --blue-hue: 240;
   --pink-hue: 320;
-  --orange-hue: 180;
+  --orange-hue: 160;
   --yellow-hue: 35;
   --green-hue: 145;
   --main-hue: var(--blue-hue);
-  --accent-hue: calc(var(--main-hue) - 160);
+  --accent-hue: calc(var(--main-hue) - 140);
   --blue-100: hsla(196, 65%, 15%, 100%);
   --blue-200: hsla(196, 65%, 25%, 100%);
   --blue-300: hsla(196, 65%, 35%, 100%);
@@ -56,9 +56,9 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: hsla(var(--main-hue), 65%, 85%, 100%);
+  --theme-color: hsla(var(--main-hue), 75%, 75%, 100%);
   --theme-color-muted: hsla(var(--main-hue), 65%, 35%, 100%);
-  --accent-color: hsla(var(--accent-hue), 60%, 70%, 100%);
+  --accent-color: hsla(var(--accent-hue), 70%, 60%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 30%, 20%, 100%);
   --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
   --font-color: hsla(var(--main-hue), 15%, 30%, 100%);
@@ -118,8 +118,7 @@
   --slate-900: hsla(240, 30%, 70%, 100%);
   --theme-color: hsla(var(--main-hue), 64%, 33%, 100%);
   --theme-color-muted: hsla(var(--main-hue), 64%, 23%, 100%);
-  --accent-color: hsla(var(--accent-hue), 77%, 23%, 100%);
-  --accent-color-muted: var(--pink-300);
+  --accent-color: hsla(var(--accent-hue), 84%, 23%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 77%, 83%, 100%);
   --background-color: hsla(var(--main-hue), 15%, 15%, 100%);
   --font-color: hsla(var(--main-hue), 2%, 90%, 100%);
@@ -411,10 +410,6 @@ button,
     border-right: 4px solid var(--accent-color);
     display: grid;
     align-items: start;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(var(--grid-item-size), 1fr)
-    );
     --grid-item-size: 80vw;
 
     @media #{$mq-medium} {
@@ -433,6 +428,79 @@ button,
   grid-gap: 1.5rem;
 }
 
+.portfolio__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 8px solid var(--theme-color);
+  border-right: 4px solid var(--theme-color);
+
+  @media #{$mq-medium} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &:hover {
+    .portfolio__card__img {
+      filter: contrast(90%);
+      transform: translateX(-1.5rem);
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+    }
+    .portfolio__card__body {
+      transform: scale(1.05);
+    }
+  }
+
+  + .card,
+  .portfolio__card {
+    margin-top: 1.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.portfolio__card__header {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 2;
+
+  @media #{$mq-medium} {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+}
+
+.portfolio__card__title {
+  padding: 1.5rem;
+}
+
+.portfolio__card__img {
+  object-fit: cover;
+  height: 100%;
+  flex: 1;
+  filter: contrast(70%);
+  transition: 0.5s ease-in-out;
+}
+
+.portfolio__card__body {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+
+  @media #{$mq-medium} {
+    grid-area: 1 / 3 / 3 / 4;
+  }
+}
 .card {
   border-radius: 5px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
