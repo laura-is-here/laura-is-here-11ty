@@ -9,7 +9,5 @@ date: 2019-09-31
 
 The website for Tiffany Hooton's queer and gender affirming therapy practice in Long Beach. Integrated with Forestry CMS for easy content editing.
 
-Built with JAMStack, most recently with Hugo.
-
 - [Site](https://tiffanyhootonmft.com)
 - [Repo](https://github.com/laura-is-here/tiffany-hooton-therapy-hugo)

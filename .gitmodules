@@ -1,3 +1,4 @@
 [submodule "dist"]
 	path = dist
-	url = git@github.com:laura-is-here/laura-is-here.github.io.git
+	url = https://github.com/laura-is-here/laura-is-here.github.io.git
+	branch = master

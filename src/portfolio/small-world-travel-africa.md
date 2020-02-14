@@ -9,7 +9,5 @@ date: 2019-01-21
 
 Steve and Catherine Hanna Askin's website for Small World Travel Africa, a service offering cultural learning and travel experiences in southern Africa.
 
-Built with JAMStack, most recently with Hugo.
-
 - [Site](https://smallworldtravelafrica.org)
 - [Repo](https://github.com/laura-is-here/small-world-travel-africa-hugo/)

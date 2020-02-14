@@ -9,7 +9,5 @@ date: "2019-11-15"
 
 Stefan Borst-Censullo's law practice site. Migrated and redesigned from Wordpress.
 
-Built with the JAMStack, most recently with Hugo.
-
 - [Site](https://stefanbc.com)
 - [Repo](https://github.com/laura-is-here/stefanbc-hugo)

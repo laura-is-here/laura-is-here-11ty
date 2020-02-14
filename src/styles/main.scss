@@ -10,7 +10,7 @@
   --yellow-hue: 35;
   --green-hue: 145;
   --main-hue: var(--blue-hue);
-  --accent-hue: calc(var(--main-hue) - 140);
+  --accent-hue: calc(var(--main-hue) - 40);
   --blue-100: hsla(196, 65%, 15%, 100%);
   --blue-200: hsla(196, 65%, 25%, 100%);
   --blue-300: hsla(196, 65%, 35%, 100%);
@@ -58,7 +58,7 @@
   --slate-900: hsla(240, 30%, 70%, 100%);
   --theme-color: hsla(var(--main-hue), 75%, 75%, 100%);
   --theme-color-muted: hsla(var(--main-hue), 65%, 35%, 100%);
-  --accent-color: hsla(var(--accent-hue), 70%, 60%, 100%);
+  --accent-color: hsla(var(--accent-hue), 70%, 70%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 30%, 20%, 100%);
   --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
   --font-color: hsla(var(--main-hue), 15%, 30%, 100%);
@@ -117,7 +117,7 @@
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
   --theme-color: hsla(var(--main-hue), 64%, 33%, 100%);
-  --theme-color-muted: hsla(var(--main-hue), 64%, 23%, 100%);
+  --theme-color-muted: hsla(var(--main-hue), 64%, 33%, 100%);
   --accent-color: hsla(var(--accent-hue), 84%, 23%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 77%, 83%, 100%);
   --background-color: hsla(var(--main-hue), 15%, 15%, 100%);
@@ -431,8 +431,6 @@ button,
 .portfolio__card {
   display: grid;
   grid-template-columns: 1fr;
-  border-top: 8px solid var(--theme-color);
-  border-right: 4px solid var(--theme-color);
 
   @media #{$mq-medium} {
     grid-template-columns: 1fr 1fr 1fr;
@@ -693,7 +691,7 @@ button,
 }
 
 .orange-hue {
-  background-color: hsla(var(--orange-hue), 65%, 85%, 100%);
+  background-color: hsla(var(--orange-hue), 75%, 75%, 100%);
   width: 3.75rem;
   height: 1.5rem;
   transition: 0.2s ease-in-out;
@@ -702,12 +700,12 @@ button,
   &:hover,
   &:focus {
     transform: scale(1.1);
-    background-color: hsla(var(--orange-hue), 65%, 85%, 100%);
+    background-color: hsla(var(--orange-hue), 75%, 75%, 100%);
   }
 }
 
 .pink-hue {
-  background-color: hsla(var(--pink-hue), 65%, 85%, 100%);
+  background-color: hsla(var(--pink-hue), 75%, 75%, 100%);
   width: 3.75rem;
   height: 1.5rem;
   transition: 0.2s ease-in-out;
@@ -716,12 +714,12 @@ button,
   &:hover,
   &:focus {
     transform: scale(1.1);
-    background-color: hsla(var(--pink-hue), 65%, 85%, 100%);
+    background-color: hsla(var(--pink-hue), 75%, 75%, 100%);
   }
 }
 
 .blue-hue {
-  background-color: hsla(var(--blue-hue), 65%, 85%, 100%);
+  background-color: hsla(var(--blue-hue), 75%, 75%, 100%);
   width: 3.75rem;
   height: 1.5rem;
   transition: 0.2s ease-in-out;
@@ -730,7 +728,7 @@ button,
   &:hover,
   &:focus {
     transform: scale(1.1);
-    background-color: hsla(var(--blue-hue), 65%, 85%, 100%);
+    background-color: hsla(var(--blue-hue), 75%, 75%, 100%);
   }
 }
 
