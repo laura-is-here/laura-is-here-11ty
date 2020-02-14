@@ -61,7 +61,7 @@
   --accent-color: hsla(var(--accent-hue), 70%, 70%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 30%, 20%, 100%);
   --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
-  --font-color: hsla(var(--main-hue), 15%, 30%, 100%);
+  --font-color: hsla(var(--main-hue), 15%, 20%, 100%);
   --font-color-muted: hsla(var(--main-hue), 0%, 35%, 100%);
   --slate: var(--slate-400);
   --switch-width: 64px;
@@ -117,8 +117,8 @@
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
   --theme-color: hsla(var(--main-hue), 64%, 33%, 100%);
-  --theme-color-muted: hsla(var(--main-hue), 64%, 33%, 100%);
-  --accent-color: hsla(var(--accent-hue), 84%, 23%, 100%);
+  --theme-color-muted: hsla(var(--main-hue), 64%, 63%, 100%);
+  --accent-color: hsla(var(--accent-hue), 64%, 33%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 77%, 83%, 100%);
   --background-color: hsla(var(--main-hue), 15%, 15%, 100%);
   --font-color: hsla(var(--main-hue), 2%, 90%, 100%);
@@ -431,8 +431,10 @@ button,
 .portfolio__card {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: start;
+  padding: 0.5rem;
 
-  @media #{$mq-medium} {
+  @media #{$mq-small} {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -468,11 +470,14 @@ button,
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  align-items: center;
   grid-area: 1 / 1 / 2 / 2;
 
+  @media #{$mq-small} {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
   @media #{$mq-medium} {
-    grid-area: 1 / 1 / 3 / 3;
+    grid-area: 1 / 1 / 3 / 4;
   }
 }
 
@@ -482,18 +487,23 @@ button,
 
 .portfolio__card__img {
   object-fit: cover;
-  height: 100%;
   flex: 1;
   filter: contrast(70%);
   transition: 0.5s ease-in-out;
+  border-radius: 5px;
 }
 
 .portfolio__card__body {
+  position: relative;
   grid-area: 2 / 1 / 3 / 2;
   padding: 1.5rem;
   border-radius: 5px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
+
+  @media #{$mq-small} {
+    grid-area: 1 / 3 / 2 / 4;
+  }
 
   @media #{$mq-medium} {
     grid-area: 1 / 3 / 3 / 4;
@@ -733,7 +743,12 @@ button,
 }
 
 .form-label {
-  display: none;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .form-control {

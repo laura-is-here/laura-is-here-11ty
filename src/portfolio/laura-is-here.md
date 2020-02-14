@@ -7,6 +7,7 @@ link: "https://laura-is-here.github.io/"
 date: 2019-12-25
 draft: true
 tags: portfolio
+repo: "https://github.com/laura-is-here/laura-is-here-11ty/"
 ---
 
 This website!
@@ -14,5 +15,3 @@ This website!
 My little home on the web to show off all my other cool websites. Experiments with a vanilla JS [theme-picker](#themeSwitch) and lazy-loaded images.
 
 Built on the JAMStack using 11ty.
-
-- [Repo](https://github.com/laura-is-here/laura-is-here-11ty/)

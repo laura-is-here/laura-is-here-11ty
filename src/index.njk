@@ -46,6 +46,8 @@ title: home
           </div>
           <div class="portfolio__card__body     bg-accent   ">
             {{ item.templateContent | safe }}
+            <a href="{{ item.data.link }}" class="anchor--button">Site</a>
+            <a href="{{ item.data.repo }}" class="anchor--button">Repo</a>
           </div>
         </li>
         {% endfor %}
