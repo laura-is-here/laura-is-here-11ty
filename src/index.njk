@@ -32,11 +32,8 @@ title: home
       </h2>
       <ul class="list-group    stack">
         {% for item in collections.portfolio %}
-        <li class="portfolio__card    bg-main">
+        <li class="portfolio__card    ">
           <div class="portfolio__card__header   ">
-            <h3 class="h2   portfolio__card__title">
-              {{ item.data.title }}
-            </h3>
             <img
               data-src="{{ item.data.image.source }}"
               alt="{{ item.data.image.alt }}"
@@ -45,9 +42,14 @@ title: home
             />
           </div>
           <div class="portfolio__card__body     bg-accent   ">
+            <h3 class="h2   portfolio__card__title">
+              {{ item.data.title }}
+            </h3>
             {{ item.templateContent | safe }}
-            <a href="{{ item.data.link }}" class="anchor--button">Site</a>
-            <a href="{{ item.data.repo }}" class="anchor--button">Repo</a>
+            <a href="{{ item.data.link }}" class="anchor--button">Live Site</a>
+            <a href="{{ item.data.repo }}" class="anchor--button"
+              >&lt; Code /&gt;</a
+            >
           </div>
         </li>
         {% endfor %}
