@@ -620,8 +620,6 @@ button,
 
 .bg-accent {
   background-color: var(--accent-color);
-  --font-color: var(--accent-color-muted);
-  --font-color-muted: var(--light-600);
   color: var(--font-color);
 
   .anchor--button {
