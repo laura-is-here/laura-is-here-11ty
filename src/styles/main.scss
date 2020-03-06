@@ -126,29 +126,29 @@
   --slate: var(--slate-300);
 
   .orange-hue {
-    background-color: hsla(var(--orange-hue), 64%, 33%, 100%);
+    background-color: hsla(calc(var(--orange-hue) - 40), 64%, 33%, 100%);
 
     &:hover,
     &:focus {
-      background-color: hsla(var(--orange-hue), 64%, 33%, 100%);
+      background-color: hsla(calc(var(--orange-hue) - 40), 64%, 33%, 100%);
     }
   }
 
   .pink-hue {
-    background-color: hsla(var(--pink-hue), 64%, 33%, 100%);
+    background-color: hsla(calc(var(--pink-hue) - 40), 64%, 33%, 100%);
 
     &:hover,
     &:focus {
-      background-color: hsla(var(--pink-hue), 64%, 33%, 100%);
+      background-color: hsla(calc(var(--pink-hue) - 40), 64%, 33%, 100%);
     }
   }
 
   .blue-hue {
-    background-color: hsla(var(--blue-hue), 64%, 33%, 100%);
+    background-color: hsla(calc(var(--blue-hue) - 40), 64%, 33%, 100%);
 
     &:hover,
     &:focus {
-      background-color: hsla(var(--blue-hue), 64%, 33%, 100%);
+      background-color: hsla(calc(var(--blue-hue) - 40), 64%, 33%, 100%);
     }
   }
 
