@@ -46,7 +46,7 @@ module.exports = {
 
   setColor: function(colorThemeSelected) {
     localStorage.setItem("colorSwitch", colorThemeSelected);
-    document.documentElement.style.setProperty("--theme-color", [
+    document.documentElement.style.setProperty("--main-hue", [
       "var(--" + colorThemeSelected + ")"
     ]);
   },
