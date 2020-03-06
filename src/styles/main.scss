@@ -315,6 +315,10 @@ strong {
   font-weight: 600;
 }
 
+.font--light {
+  font-weight: 400;
+}
+
 /* -------------------------------------- $LINKS */
 
 a {
@@ -379,13 +383,6 @@ button,
 /* ------------------------------ $CONTAINERS */
 
 .container {
-  margin: 0 4%;
-  --grid-item-size: 80vw;
-
-  @media #{$mq-medium} {
-    --grid-item-size: 30vw;
-  }
-
   @media #{$mq-large} {
     margin: 0 10%;
   }
@@ -426,6 +423,7 @@ button,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
+  align-items: start;
 }
 
 .portfolio__card {

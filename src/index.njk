@@ -3,28 +3,88 @@ layout: layouts/baseof.njk
 title: home
 ---
 
-<section class="container">
+<article class="padding--lg container">
   <div class="stack">
     <div class="grid-container--auto   padding--lg    bg-main">
       <div class="measure--sm ">
+        <p class="h2 font--light">
+          From first inspiration, to your first succeses...
+        </p>
         <h1>
-          Web design and development on the JAMStack (& Beyond)
+          I build custom websites that
+          <span class="bg-accent">elevate</span> your brand, business, or
+          product
         </h1>
         <p>
-          I am a web designer and developer specializing in fast, accessible,
-          and mobile-friendly websites using
-          <a href="#jamstack">JAMStack</a> technology and best practices.
+          I am a web designer and developer specializing in
+          <span class="bg-accent"
+            >fast, SEO-friendly, and mobile-friendly websites</span
+          >
+          using <a href="#jamstack">JAMStack</a> technology and best practices.
         </p>
         <p>
           I am currently available to work on new projects.
         </p>
         <a href="#contact" class="anchor--button">Hire me!</a>
+        <a href="#portfolio" class="anchor--button"
+          >See Some Projects I've Worked On</a
+        >
       </div>
       <div class="padding--lg    bg-accent   card">
         {% include "person-whiteboard-svg.html" %}
       </div>
     </div>
-    <div class="">
+    <div class="grid-container--auto    padding--lg    bg-accent">
+      <div>
+        <h2>About me</h2>
+        <p>Briefly, some of my favorite parts of web design and development:</p>
+        <ul class="bg-main padding--lg card">
+          <li><strong>Increasing Site Speed & Performance</strong></li>
+          <li><strong>Developing Sites Straightforward & Usable</strong></li>
+          <li>
+            <strong
+              >Creating Unique, Elegant Designs, tailored to your brand or
+              product</strong
+            >
+          </li>
+        </ul>
+
+        <p>
+          I graduated from California State University, Long Beach in 2014 with
+          a degree in Psychology, a program where I first began learning the
+          basics of design and development.
+        </p>
+        <p>
+          In the time I've worked as a developer, I've done my best to create
+          accessible, mobile-friendly websites that provide highly usable,
+          custom experiences tailored to your brand.
+        </p>
+        <h3 class="h2">My skills</h3>
+        <ul class="">
+          <li class="">Search Engine Optimization (SEO)</li>
+          <li>Optimizing Website Performance</li>
+          <li class="">
+            Crafting content, including:
+            <ul>
+              <li>Writing</li>
+              <li>Basic graphic & logo design</li>
+              <li>Color-schemes & typography</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Please <a href="#contact" class="anchor">contact me</a> if you'd like
+          to hire me to work on a project.
+        </p>
+      </div>
+      <div>
+        <div class="padding--lg">
+          {% include "contact-envelope-svg.html" %}
+        </div>
+        {% include "sidebar.njk" %}
+      </div>
+    </div>
+    <div class="" id="portfolio">
       <h2 class="h1">
         <span class="text--bg-line--primary">
           Projects I've Worked On
@@ -55,64 +115,5 @@ title: home
         {% endfor %}
       </ul>
     </div>
-    <div class="grid-container--auto    padding--lg    bg-accent">
-      <div>
-        <h2>About me</h2>
-        <p>Briefly, some of my favorite parts of web design and development:</p>
-        <ul>
-          <li><strong>Accessibility and inclusivity</strong></li>
-          <li><strong>The JAMStack</strong></li>
-          <li><strong>Unique, elegant user interfaces</strong></li>
-        </ul>
-
-        <p>
-          I began developing the web during an undergraduate class on human
-          factors.
-        </p>
-        <p>
-          In the time I've worked as a developer, I've done my best to create
-          accessible, responsive websites with hand-coded user interfaces
-          developed from scratch.
-        </p>
-        <p>
-          I am queer and trans and love working with other queer and trans
-          folks, as well as POC, sex workers, and activists.
-        </p>
-        <h3 class="h2">My skills</h3>
-        <ul class="">
-          <li class="">Semantic HTML</li>
-          <li>CSS/SCSS</li>
-          <li class="">
-            Static site generators:
-            <ul>
-              <li>Jekyll</li>
-              <li>Hugo</li>
-              <li>Eleventy</li>
-              <li>Gatsby</li>
-            </ul>
-          </li>
-          <li class="">
-            Crafting content, including:
-            <ul>
-              <li>Writing</li>
-              <li>Basic graphic & logo design</li>
-              <li>Color-schemes & typography</li>
-            </ul>
-          </li>
-          <li class="">Vanilla Javascript, ES6+</li>
-          <li>Much more!</li>
-        </ul>
-        <p>
-          Please <a href="#contact" class="anchor">contact me</a> if you'd like
-          to hire me to work on a project.
-        </p>
-      </div>
-      <div>
-        <div class="padding--lg">
-          {% include "contact-envelope-svg.html" %}
-        </div>
-        {% include "sidebar.njk" %}
-      </div>
-    </div>
   </div>
-</section>
+</article>
