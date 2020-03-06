@@ -1,8 +1,9 @@
-# Deventy
+# My Porfolio
 
-A minimal 11ty starting point for building static websites with modern tools. Uses the CLI of each tool. Allowing a much easier upgrade path for each individual development tool.
+A simple portfolio based on the [Deventy](https://github.com/ianrose/deventy) starter for 11ty.
 
 Features:
+
 - [11ty](https://www.11ty.io/)
 - [Sass/SCSS](https://github.com/sass/node-sass)
 - [Webpack](https://webpack.js.org/)
@@ -26,13 +27,15 @@ $ npm install
 ```
 $ npm run dev
 ```
- And in debug mode:
- 
+
+And in debug mode:
+
 ```
 $ npm run dev:debug
 ```
 
 You can view the website at the given access URL:
+
 ```
 $ light-server is listening at http://localhost:4000
 ```
