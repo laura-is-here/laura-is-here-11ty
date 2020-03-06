@@ -56,8 +56,8 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: hsla(var(--main-hue), 75%, 75%, 100%);
-  --theme-color-muted: hsla(var(--main-hue), 65%, 35%, 100%);
+  --theme-color: hsla(240, 75%, 75%, 100%);
+  --theme-color-muted: hsla(240, 65%, 35%, 100%);
   --accent-color: hsla(var(--accent-hue), 70%, 70%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 30%, 20%, 100%);
   --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
@@ -116,8 +116,8 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: hsla(var(--main-hue), 64%, 33%, 100%);
-  --theme-color-muted: hsla(var(--main-hue), 64%, 63%, 100%);
+  --theme-color: hsla(240, 64%, 33%, 100%);
+  --theme-color-muted: hsla(240, 64%, 63%, 100%);
   --accent-color: hsla(var(--accent-hue), 64%, 33%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 77%, 83%, 100%);
   --background-color: hsla(var(--main-hue), 15%, 15%, 100%);
@@ -691,7 +691,7 @@ button,
 }
 
 .orange-hue {
-  background-color: hsla(var(--orange-hue), 75%, 75%, 100%);
+  background-color: hsla(calc(var(--orange-hue) - 40), 75%, 75%, 100%);
   width: 3.75rem;
   height: 1.5rem;
   transition: 0.2s ease-in-out;
@@ -700,12 +700,12 @@ button,
   &:hover,
   &:focus {
     transform: scale(1.1);
-    background-color: hsla(var(--orange-hue), 75%, 75%, 100%);
+    background-color: hsla(calc(var(--orange-hue) - 40), 75%, 75%, 100%);
   }
 }
 
 .pink-hue {
-  background-color: hsla(var(--pink-hue), 75%, 75%, 100%);
+  background-color: hsla(calc(var(--pink-hue) - 40), 75%, 75%, 100%);
   width: 3.75rem;
   height: 1.5rem;
   transition: 0.2s ease-in-out;
@@ -714,12 +714,12 @@ button,
   &:hover,
   &:focus {
     transform: scale(1.1);
-    background-color: hsla(var(--pink-hue), 75%, 75%, 100%);
+    background-color: hsla(calc(var(--pink-hue) - 40), 75%, 75%, 100%);
   }
 }
 
 .blue-hue {
-  background-color: hsla(var(--blue-hue), 75%, 75%, 100%);
+  background-color: hsla(calc(var(--blue-hue) - 40), 75%, 75%, 100%);
   width: 3.75rem;
   height: 1.5rem;
   transition: 0.2s ease-in-out;
@@ -728,7 +728,7 @@ button,
   &:hover,
   &:focus {
     transform: scale(1.1);
-    background-color: hsla(var(--blue-hue), 75%, 75%, 100%);
+    background-color: hsla(calc(var(--blue-hue) - 40), 75%, 75%, 100%);
   }
 }
 
