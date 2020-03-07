@@ -233,12 +233,18 @@ body {
   flex: 1 0 0;
   position: relative;
   z-index: 20;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 main {
   z-index: 20;
 }
 
+header {
+  width: 100%;
+  overflow: hidden;
+}
 /* ------------------------------------- $TYPOGRAPHY */
 
 h1,
