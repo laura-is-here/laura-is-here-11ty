@@ -5,7 +5,7 @@ title: Web Design & Development by Laura Gabrielle
 
 <article class="padding--lg container">
   <div class="stack">
-    <div class="grid-container--auto   padding--lg    bg-main">
+    <div class="grid-container--auto   ">
       <div class="measure--sm ">
         <p class="h2 font--light">
           From your first inspiration, to your first succeses...
@@ -34,14 +34,26 @@ title: Web Design & Development by Laura Gabrielle
         {% include "person-whiteboard-svg.html" %}
       </div>
     </div>
-    <div class="grid-container--auto    padding--lg    bg-accent">
+    <div class="grid-container--auto   position-relative padding--md">
+      <svg
+        style="fill: var(--theme-color); position: absolute; top: 0; z-index: -1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill-opacity="0.3"
+          d="M0,192L205.7,128L411.4,192L617.1,96L822.9,32L1028.6,128L1234.3,224L1440,128L1440,0L1234.3,0L1028.6,0L822.9,0L617.1,0L411.4,0L205.7,0L0,0Z"
+        ></path>
+      </svg>
       <div>
         <h2>About me</h2>
         <p>Briefly, some of my favorite parts of web design and development:</p>
-        <ul class="list-group bg-main padding--lg">
-          <li>Increasing Site Speed & Performance</li>
-          <li>Developing Sites Straightforward & Usable</li>
-          <li>
+        <ul class="bg-main padding--lg">
+          <li class="padding-y--sm">Increasing Site Speed & Performance</li>
+          <li class="padding-y--sm">
+            Developing Sites Straightforward & Usable
+          </li>
+          <li class="padding-y--sm">
             Creating Unique, Elegant Designs, tailored to your brand or product
           </li>
         </ul>

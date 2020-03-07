@@ -204,6 +204,7 @@ body {
   line-height: $base-line-height;
   color: var(--font-color);
   font-weight: 400;
+  background-color: var(--background-color);
 
   @media #{$mq-medium} {
     font-size: $base-font-size * 1.2;
@@ -225,7 +226,7 @@ body {
 
 .wrapper {
   background-color: var(--background-color);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 3 6h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 3 6h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -651,8 +652,16 @@ footer {
   padding: 0;
 }
 
-.padding--lg {
+.padding-y--sm {
+  padding: 0.25rem 0;
+}
+
+.padding--md {
   padding: 0.75rem;
+}
+
+.padding--lg {
+  padding: 1.5rem;
 
   @media #{$mq-medium} {
     padding: 2.25rem;
