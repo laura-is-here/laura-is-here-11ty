@@ -95,7 +95,7 @@ title: Web Design & Development by Laura Gabrielle
         {% include "sidebar.njk" %}
       </div>
     </div>
-    <div class="padding--md position-relative" id="portfolio">
+    <div class="padding--md " id="portfolio">
       <h2 class="h1">
         <span class="text--bg-line--primary">
           Projects I've Worked On
@@ -106,6 +106,27 @@ title: Web Design & Development by Laura Gabrielle
         {% for item in collections.portfolio %}
         <li class="portfolio__card ">
           <div class="portfolio__card__header position-relative ">
+            <svg
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              id="svg8"
+              version="1.1"
+              style="fill: var(--theme-color); position: absolute; top: 0; z-index: -1; right: 0; left: 0; bottom: 0;"
+              viewBox="0 0 68.962013 87.054421"
+              height="87.05442mm"
+              width="68.962013mm"
+            >
+              <g transform="translate(-60.582717,-101.99675)" id="layer1">
+                <path
+                  id="path10"
+                  d="m 84.643063,119.3014 c -22.678572,21.92261 -33.238301,18.94859 -12.071635,38.60336 21.166666,19.65476 0.755954,51.40476 39.309522,11.33928 38.55357,-40.06547 1.47831,-17.1151 -9.07143,-57.45237 -6.425591,-24.568457 -18.166457,7.50973 -18.166457,7.50973 z"
+                />
+              </g>
+            </svg>
+
             <img
               data-src="{{ item.data.image.source }}"
               alt="{{ item.data.image.alt }}"
