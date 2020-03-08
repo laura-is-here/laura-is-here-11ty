@@ -36,12 +36,12 @@ title: Web Design & Development by Laura Gabrielle
     </div>
     <div class="grid-container--auto position-relative padding--md">
       <svg
-        style="fill: var(--theme-color); position: absolute; top: 0; left: -50%; z-index: -1; min-width: 200%"
+        style="fill: var(--accent-color); position: absolute; top: 0; left: -50%; z-index: -1; min-width: 200%"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
         <path
-          fill-opacity="0.3"
+          fill-opacity="1"
           d="M0,192L205.7,128L411.4,192L617.1,96L822.9,32L1028.6,128L1234.3,224L1440,128L1440,0L1234.3,0L1028.6,0L822.9,0L617.1,0L411.4,0L205.7,0L0,0Z"
         ></path>
       </svg>
@@ -104,29 +104,26 @@ title: Web Design & Development by Laura Gabrielle
 
       <ul class="list-group stack ">
         {% for item in collections.portfolio %}
-        <li class="portfolio__card ">
-          <div class="portfolio__card__header position-relative ">
-            <svg
-              xmlns:dc="http://purl.org/dc/elements/1.1/"
-              xmlns:cc="http://creativecommons.org/ns#"
-              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-              xmlns:svg="http://www.w3.org/2000/svg"
-              xmlns="http://www.w3.org/2000/svg"
-              id="svg8"
-              version="1.1"
-              style="fill: var(--theme-color); position: absolute; top: 0; z-index: -1; right: 0; left: 0; bottom: 0;"
-              viewBox="0 0 68.962013 87.054421"
-              height="87.05442mm"
-              width="68.962013mm"
-            >
-              <g transform="translate(-60.582717,-101.99675)" id="layer1">
-                <path
-                  id="path10"
-                  d="m 84.643063,119.3014 c -22.678572,21.92261 -33.238301,18.94859 -12.071635,38.60336 21.166666,19.65476 0.755954,51.40476 39.309522,11.33928 38.55357,-40.06547 1.47831,-17.1151 -9.07143,-57.45237 -6.425591,-24.568457 -18.166457,7.50973 -18.166457,7.50973 z"
-                />
-              </g>
-            </svg>
-
+        <li class="portfolio__card  position-relative ">
+          <svg
+            style="fill: var(--theme-color); position: absolute; "
+            viewBox="0 0 68.962013 87.054421"
+            height="87.05442mm"
+            width="800"
+            preserveAspectRatio="none"
+          >
+            <g transform="translate(-60.582717,-101.99675)" id="layer1">
+              <path
+                id="path10"
+                d="m 84.643063,119.3014 c -22.678572,21.92261
+                -33.238301,18.94859 -12.071635,38.60336 21.166666,19.65476
+                0.755954,51.40476 39.309522,11.33928 38.55357,-40.06547
+                1.47831,-17.1151 -9.07143,-57.45237 -6.425591,-24.568457
+                -18.166457,7.50973 -18.166457,7.50973 z"
+              />
+            </g>
+          </svg>
+          <div class="portfolio__card__header">
             <img
               data-src="{{ item.data.image.source }}"
               alt="{{ item.data.image.alt }}"
